@@ -1,5 +1,4 @@
 using System.Runtime.CompilerServices;
-using DiffEngine;
 using VerifyTests.DiffPlex;
 
 namespace GrpService.UnitTest;
@@ -12,10 +11,8 @@ public static class ModuleInitializer
 		// Don't dump full content in output for Failed Test
 		VerifyDiffPlex.Initialize(OutputType.Minimal);
 
-		// Don't launch Diff Tool
-		// I"m using either Rider Plugin for Test Window or
-		// dotnet-verify review (global dotnet tool)
-		DiffRunner.Disabled = true;
+		// Leave Diff Tool On for now
+		//DiffRunner.Disabled = true;
 
 		VerifierSettings.DontScrubGuids();
 		VerifierSettings.DontScrubDateTimes();

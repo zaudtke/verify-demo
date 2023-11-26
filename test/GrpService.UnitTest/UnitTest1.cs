@@ -31,7 +31,7 @@ public class UnitTest1
 		User user = new()
 		{
 			Id = Guid.Parse("fdcd2958-7901-480b-ae5a-942923534fe6"),
-			FirstName = "Al",
+			FirstName = "Allen",
 			LastName = "Zaudtke",
 			HireDate = new DateOnly(2001, 10, 30),
 			Status = Status.FullTime,
