@@ -48,6 +48,6 @@ public class UnitTest1
 	{
 		HelloReply reply = new() { Message = "A Proto Message Property!" };
 
-		return Verify(reply);
+		 return Verify(reply);
 	}
 }
